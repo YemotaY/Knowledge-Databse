@@ -18,53 +18,155 @@ Graph theory applications in computer science:
 
 ### Graph Components
 
-**Graph G = (V, E)**
-- V: Set of vertices (nodes)
-- E: Set of edges (connections between vertices)
+**Graph $G = (V, E)$**
+- $V$: Set of vertices (nodes)
+- $E$: Set of edges (connections between vertices)
+
+**Mathematical Notation:**
+- **Undirected edge**: $\{u, v\} \in E$ or $uv \in E$
+- **Directed edge**: $(u, v) \in E$ or $u \to v$
+- **Adjacency**: $u \sim v$ (u is adjacent to v)
+- **Degree**: $\deg(v) = |\{u \in V : \{u,v\} \in E\}|$
 
 **Types of Graphs:**
 - **Undirected Graph**: Edges have no direction
-- **Directed Graph (Digraph)**: Edges have direction
+- **Directed Graph (Digraph)**: Edges have direction  
 - **Weighted Graph**: Edges have associated weights/costs
 - **Simple Graph**: No self-loops or multiple edges
 - **Multigraph**: Multiple edges between same vertices allowed
 
+**Visualization Examples:**
+```
+Undirected Graph:        Directed Graph:         Weighted Graph:
+    A---B                   A-->B                   A--5--B
+   /|   |\                 /    |\                 /|     |\3
+  D |   | C               D     | C               2 |     | C
+   \|   |/                 \    |/                 \|     |/
+    E---F                   E<--F                   E--1--F
+```
+
 **Graph Properties:**
-- **Order**: Number of vertices |V|
-- **Size**: Number of edges |E|
+- **Order**: Number of vertices $|V|$
+- **Size**: Number of edges $|E|$
 - **Degree**: Number of edges incident to a vertex
-  - In directed graphs: in-degree and out-degree
+  - **Handshaking Lemma**: $\sum_{v \in V} \deg(v) = 2|E|$
+  - In directed graphs: in-degree $\deg^-(v)$ and out-degree $\deg^+(v)$
 - **Adjacent**: Two vertices connected by an edge
 - **Incident**: Edge connects to a vertex
 
+**Degree Sequence Visualization:**
+```
+Graph:     A---B---C
+           |   |   |
+           D---E---F
+
+Vertices: A B C D E F
+Degrees:  2 3 2 2 3 2
+
+Degree sequence: [2, 2, 2, 2, 3, 3]
+Sum of degrees: 14 = 2 × 7 edges ✓
+```
+
 ### Common Graph Types
 
-**Complete Graph Kₙ:**
+**Complete Graph $K_n$:**
 - Every pair of vertices is connected
-- Number of edges: n(n-1)/2
+- Number of edges: $\binom{n}{2} = \frac{n(n-1)}{2}$
+
+**Visualization:**
+```
+K₃ (Triangle):      K₄ (Tetrahedron):     K₅:
+    A                     A                  A---B
+   /|\                   /|\                /|X|\
+  B-+-C                 B-+-C              E-+-+-C
+                         \|/                \|X|/
+                          D                  D---+
+
+Edges: 3              Edges: 6           Edges: 10
+```
 
 **Bipartite Graph:**
-- Vertices can be divided into two disjoint sets
-- Edges only between different sets
-- **Complete Bipartite Kₘ,ₙ**: Every vertex in one set connects to every vertex in the other
+- Vertices can be divided into two disjoint sets $U, V$
+- Edges only between different sets: $E \subseteq U \times V$
+- **Complete Bipartite $K_{m,n}$**: Every vertex in $U$ connects to every vertex in $V$
 
-**Cycle Graph Cₙ:**
-- Vertices form a single cycle
+**Bipartite Visualization:**
+```
+U = {A, B, C}     Complete K₃,₂:     Non-complete:
+V = {X, Y}        A---X   Y          A---X   Y
+                  |\ / \ /|          |       |
+                  | X   X |          |       |
+                  |/ \ / \|          |       |
+                  B---+   +          B       |
+                  |   |   |          |       |
+                  C---+---+          C-------+
+```
+
+**Cycle Graph $C_n$:**
+- Vertices form a single cycle  
 - Each vertex has degree 2
+- Number of edges: $n$
 
-**Path Graph Pₙ:**
+**Path Graph $P_n$:**
 - Vertices form a single path
-- Two vertices of degree 1, others degree 2
+- Two vertices of degree 1, others degree 2  
+- Number of edges: $n-1$
 
 **Tree:**
 - Connected graph with no cycles
-- n vertices, n-1 edges
+- $n$ vertices, $n-1$ edges
 - Unique path between any two vertices
+
+**Visualization:**
+```
+C₅ (Cycle):        P₅ (Path):         Tree:
+    A                A---B              A
+   / \               |   |             /|\
+  E   B              |   |            B C D
+  |   |              |   |           /|   |\
+  D---C              |   |          E F   G H
+                     C---D---E
+
+Degrees: [2,2,2,2,2]  Degrees: [1,2,2,2,1]  Degrees: [3,2,1,2,1,1,1,1]
+```
+
+**Graph Families Mathematical Properties:**
+- **Complete Graph**: $|E| = \binom{n}{2}$, $\deg(v) = n-1$ for all $v$
+- **Cycle Graph**: $|E| = n$, $\deg(v) = 2$ for all $v$  
+- **Tree**: $|E| = n-1$, exactly one path between any two vertices
+- **Bipartite**: $\chi(G) \leq 2$ (chromatic number at most 2)
 
 ## Graph Representations
 
 ### Adjacency Matrix
-2D array where A[i][j] = 1 if edge exists between vertices i and j.
+2D array where $A[i][j] = 1$ if edge exists between vertices $i$ and $j$.
+
+**Mathematical Definition:**
+$$A_{ij} = \begin{cases}
+1 & \text{if } \{v_i, v_j\} \in E \\
+0 & \text{otherwise}
+\end{cases}$$
+
+**Properties:**
+- **Undirected graphs**: $A$ is symmetric ($A_{ij} = A_{ji}$)
+- **Space complexity**: $O(n^2)$
+- **Edge lookup**: $O(1)$
+- **Vertex degree**: $\deg(v_i) = \sum_{j=1}^{n} A_{ij}$
+
+**Visualization Example:**
+```
+Graph:           Adjacency Matrix:
+  A---B               A B C D
+  |\ /|           A [ 0 1 1 1 ]
+  | X |           B [ 1 0 1 1 ]  
+  |/ \|           C [ 1 1 0 0 ]
+  C---D           D [ 1 1 0 0 ]
+
+Matrix properties:
+- Symmetric ✓
+- Diagonal zeros ✓ (no self-loops)
+- Row sums = degrees: [3,3,2,2]
+```
 
 ```python
 class GraphMatrix:

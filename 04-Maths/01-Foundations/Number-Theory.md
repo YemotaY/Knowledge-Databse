@@ -18,10 +18,23 @@ Number theory provides essential tools for:
 ### Prime Numbers
 A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
 
+**Mathematical Definition:**
+$$p \in \mathbb{P} \iff p > 1 \land \forall d \in \mathbb{N}: (d | p \Rightarrow d = 1 \lor d = p)$$
+
 **Properties:**
-- **Fundamental Theorem of Arithmetic**: Every integer > 1 is either prime or can be uniquely factored into primes
+- **Fundamental Theorem of Arithmetic**: Every integer $n > 1$ is either prime or can be uniquely factored into primes:
+  $$n = p_1^{a_1} \cdot p_2^{a_2} \cdot \ldots \cdot p_k^{a_k}$$
 - **Infinitude**: There are infinitely many prime numbers (Euclid's proof)
-- **Distribution**: Prime gaps and the Prime Number Theorem
+- **Distribution**: Prime gaps and the Prime Number Theorem: $\pi(x) \sim \frac{x}{\ln x}$
+
+**Visualization:**
+```
+Prime Sieve (first 30 numbers):
+2  3  ×  5  ×  7  ×  ×  ×  11 ×  13 ×  ×  ×  17 ×  19 ×  ×  ×  23 ×  ×  ×  ×  ×  29 ×
+✓  ✓     ✓     ✓           ✓     ✓              ✓     ✓                 ✓              ✓
+
+Prime gaps: 1, 2, 2, 4, 2, 4, 2, 4, 6, 2, 6...
+```
 
 **Applications in CS:**
 - **Cryptography**: RSA relies on difficulty of factoring large primes
@@ -31,8 +44,29 @@ A prime number is a natural number greater than 1 that has no positive divisors 
 ### Divisibility and GCD
 
 **Greatest Common Divisor (GCD):**
-- `gcd(a, b)` is the largest positive integer that divides both a and b
-- **Euclidean Algorithm**: Efficient method to compute GCD
+- $\gcd(a, b)$ is the largest positive integer that divides both $a$ and $b$
+- **Mathematical Definition**: $\gcd(a, b) = \max\{d \in \mathbb{N} : d | a \land d | b\}$
+- **Euclidean Algorithm**: Efficient method to compute GCD using: $\gcd(a, b) = \gcd(b, a \bmod b)$
+
+**LaTeX Formula:**
+$$\gcd(a, b) = \begin{cases}
+a & \text{if } b = 0 \\
+\gcd(b, a \bmod b) & \text{if } b > 0
+\end{cases}$$
+
+**Visualization of Euclidean Algorithm:**
+```
+Example: gcd(48, 18)
+48 = 18 × 2 + 12  →  gcd(48, 18) = gcd(18, 12)
+18 = 12 × 1 + 6   →  gcd(18, 12) = gcd(12, 6)
+12 = 6 × 2 + 0    →  gcd(12, 6) = 6
+
+Visual representation:
+48 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+18 ■■■■■■■■■■■■■■■■■■
+      └─12─┘└─12─┘└─12─┘└─12─┘
+             └─6─┘ └─6─┘
+```
 
 ```
 Algorithm: Euclidean GCD
@@ -47,7 +81,21 @@ return a
 ```
 
 **Extended Euclidean Algorithm:**
-Finds integers x, y such that ax + by = gcd(a, b)
+Finds integers $x, y$ such that $ax + by = \gcd(a, b)$
+
+**Mathematical Form:**
+$$\text{If } \gcd(a, b) = d, \text{ then } \exists x, y \in \mathbb{Z} \text{ such that } ax + by = d$$
+
+**Visualization Example** ($a = 30, b = 18$):
+```
+Extended Euclidean Algorithm:
+30 = 18 × 1 + 12    →    12 = 30 - 18 × 1
+18 = 12 × 1 + 6     →     6 = 18 - 12 × 1 = 18 - (30 - 18 × 1) × 1 = 18 × 2 - 30 × 1
+12 = 6 × 2 + 0      →   gcd = 6
+
+Result: 30 × (-1) + 18 × 2 = 6
+Verification: -30 + 36 = 6 ✓
+```
 
 **Applications:**
 - **Modular Inverse**: Computing multiplicative inverses
@@ -57,15 +105,43 @@ Finds integers x, y such that ax + by = gcd(a, b)
 ### Modular Arithmetic
 
 **Definition:**
-a ≡ b (mod n) means n divides (a - b)
+$$a \equiv b \pmod{n} \iff n | (a - b)$$
 
 **Properties:**
-- **Addition**: (a + b) mod n = ((a mod n) + (b mod n)) mod n
-- **Multiplication**: (a × b) mod n = ((a mod n) × (b mod n)) mod n
-- **Distributive**: (a + b) mod n = (a mod n + b mod n) mod n
+- **Addition**: $(a + b) \bmod n = ((a \bmod n) + (b \bmod n)) \bmod n$
+- **Multiplication**: $(a \times b) \bmod n = ((a \bmod n) \times (b \bmod n)) \bmod n$  
+- **Distributive**: $(a + b) \bmod n = (a \bmod n + b \bmod n) \bmod n$
+
+**Modular Arithmetic Visualization:**
+```
+Clock Arithmetic (mod 12):
+  11  12   1
+10        2
+9          3
+8          4
+  7   6   5
+
+Examples:
+10 + 5 ≡ 3 (mod 12)  →  15 wraps around to 3
+8 × 7 ≡ 8 (mod 12)   →  56 = 4×12 + 8
+```
 
 **Modular Exponentiation:**
-Computing a^b mod n efficiently using repeated squaring:
+Computing $a^b \bmod n$ efficiently using repeated squaring:
+
+$$a^b \bmod n = \prod_{i: b_i = 1} a^{2^i} \bmod n$$
+
+**Visualization Example** ($3^{13} \bmod 7$):
+```
+Binary: 13 = 1101₂ = 8 + 4 + 1
+
+3¹  ≡ 3 (mod 7)     ✓ (bit 0 = 1)
+3²  ≡ 2 (mod 7)
+3⁴  ≡ 4 (mod 7)     ✓ (bit 2 = 1)  
+3⁸  ≡ 2 (mod 7)     ✓ (bit 3 = 1)
+
+Result: 3 × 4 × 2 ≡ 24 ≡ 3 (mod 7)
+```
 
 ```
 Algorithm: Fast Modular Exponentiation
@@ -90,13 +166,36 @@ return result
 ## Advanced Topics
 
 ### Chinese Remainder Theorem
-If n₁, n₂, ..., nₖ are pairwise coprime, then the system:
-- x ≡ a₁ (mod n₁)
-- x ≡ a₂ (mod n₂)
-- ...
-- x ≡ aₖ (mod nₖ)
+If $n_1, n_2, \ldots, n_k$ are pairwise coprime, then the system:
+$$\begin{cases}
+x \equiv a_1 \pmod{n_1} \\
+x \equiv a_2 \pmod{n_2} \\
+\vdots \\
+x \equiv a_k \pmod{n_k}
+\end{cases}$$
 
-has a unique solution modulo N = n₁ × n₂ × ... × nₖ.
+has a unique solution modulo $N = n_1 \times n_2 \times \cdots \times n_k$.
+
+**Solution Formula:**
+$$x = \sum_{i=1}^{k} a_i \cdot M_i \cdot y_i \pmod{N}$$
+where $M_i = \frac{N}{n_i}$ and $y_i$ is the modular inverse of $M_i$ modulo $n_i$.
+
+**Visualization Example:**
+```
+System: x ≡ 2 (mod 3), x ≡ 3 (mod 5), x ≡ 2 (mod 7)
+
+Step 1: N = 3 × 5 × 7 = 105
+Step 2: M₁ = 35, M₂ = 21, M₃ = 15
+Step 3: Find inverses:
+   35 × y₁ ≡ 1 (mod 3) → y₁ = 2
+   21 × y₂ ≡ 1 (mod 5) → y₂ = 1  
+   15 × y₃ ≡ 1 (mod 7) → y₃ = 1
+
+Solution: x = 2×35×2 + 3×21×1 + 2×15×1 = 140 + 63 + 30 = 233 ≡ 23 (mod 105)
+
+Verification:
+23 ≡ 2 (mod 3) ✓    23 ≡ 3 (mod 5) ✓    23 ≡ 2 (mod 7) ✓
+```
 
 **Applications:**
 - **RSA Speedup**: CRT optimization for decryption

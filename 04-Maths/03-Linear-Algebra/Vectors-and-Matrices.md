@@ -21,34 +21,75 @@ Linear algebra applications in computer science:
 **Definition:**
 A vector is an ordered collection of numbers, representing magnitude and direction in space.
 
+**Mathematical Definition:**
+$$\mathbf{v} = \begin{pmatrix} v_1 \\ v_2 \\ \vdots \\ v_n \end{pmatrix} \in \mathbb{R}^n$$
+
 **Notation:**
-- Column vector: **v** = [v₁, v₂, ..., vₙ]ᵀ
-- Row vector: **v** = [v₁, v₂, ..., vₙ]
-- Component notation: **v** = (v₁, v₂, ..., vₙ)
+- Column vector: $\mathbf{v} = [v_1, v_2, \ldots, v_n]^T$
+- Row vector: $\mathbf{v} = [v_1, v_2, \ldots, v_n]$
+- Component notation: $\mathbf{v} = (v_1, v_2, \ldots, v_n)$
 
 **Geometric Interpretation:**
 - **2D Vector**: Point in plane or directed line segment
-- **3D Vector**: Point in space or directed line segment
+- **3D Vector**: Point in space or directed line segment  
 - **n-D Vector**: Point in n-dimensional space
+
+**Vector Visualization:**
+```
+2D Vector (3, 2):        3D Vector (2, 3, 1):
+    ↑ y                      z ↑
+    |                          |
+  2 +----→                     + (2,3,1)
+    |    /                    /|
+  1 +   /                    / |
+    |  /                    /  |
+  0 +------→ x             +---+----→ y
+    0 1 2 3              0  1  2  3
+
+Length: √(3² + 2²) = √13   Length: √(2² + 3² + 1²) = √14
+```
 
 ### Vector Operations
 
 **Vector Addition:**
-**u** + **v** = [u₁ + v₁, u₂ + v₂, ..., uₙ + vₙ]
+$$\mathbf{u} + \mathbf{v} = \begin{pmatrix} u_1 + v_1 \\ u_2 + v_2 \\ \vdots \\ u_n + v_n \end{pmatrix}$$
 
-```python
-import numpy as np
+**Geometric Visualization:**
+```
+Vector Addition (Parallelogram Rule):
+    ↑
+    |  
+  v +----→ u+v
+    |\    /|
+    | \  / |
+    |  \/  |
+    | /u\  |
+    |/   \ |
+    +----→-+
+       u
 
-def vector_add(u, v):
-    return [u[i] + v[i] for i in range(len(u))]
-
-# Using NumPy
-u = np.array([1, 2, 3])
-v = np.array([4, 5, 6])
-result = u + v  # [5, 7, 9]
+Tip-to-tail method:
+u = (2,1), v = (1,2)
+u + v = (3,3)
 ```
 
 **Scalar Multiplication:**
+$$c\mathbf{v} = \begin{pmatrix} cv_1 \\ cv_2 \\ \vdots \\ cv_n \end{pmatrix}$$
+
+**Properties:**
+- **Magnitude scaling**: $\|c\mathbf{v}\| = |c| \cdot \|\mathbf{v}\|$
+- **Direction**: Same if $c > 0$, opposite if $c < 0$
+
+**Visualization:**
+```
+Original: v = (2,1)     2v = (4,2)     -0.5v = (-1,-0.5)
+    ↑                     ↑                  ↑
+  1 +----→               2 +                 +
+    |  /                  |  /               |\
+    | /                   | /                | \
+    +------→            4 +------→           +--\--→
+    0  2                  0    4             -1  0.5
+```
 c**v** = [cv₁, cv₂, ..., cvₙ]
 
 ```python
@@ -61,53 +102,87 @@ result = 2 * v  # [2, 4, 6]
 ```
 
 **Dot Product (Inner Product):**
-**u** · **v** = u₁v₁ + u₂v₂ + ... + uₙvₙ
+$$\mathbf{u} \cdot \mathbf{v} = \sum_{i=1}^{n} u_i v_i = u_1v_1 + u_2v_2 + \cdots + u_nv_n$$
 
-```python
-def dot_product(u, v):
-    return sum(u[i] * v[i] for i in range(len(u)))
-
-# Using NumPy
-u = np.array([1, 2, 3])
-v = np.array([4, 5, 6])
-result = np.dot(u, v)  # 32
-```
+**Geometric Interpretation:**
+$$\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\| \|\mathbf{v}\| \cos \theta$$
 
 **Properties:**
-- **Commutative**: **u** · **v** = **v** · **u**
-- **Distributive**: **u** · (**v** + **w**) = **u** · **v** + **u** · **w**
-- **Scalar multiplication**: (c**u**) · **v** = c(**u** · **v**)
+- **Commutative**: $\mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u}$
+- **Distributive**: $\mathbf{u} \cdot (\mathbf{v} + \mathbf{w}) = \mathbf{u} \cdot \mathbf{v} + \mathbf{u} \cdot \mathbf{w}$
+- **Scalar multiplication**: $(c\mathbf{u}) \cdot \mathbf{v} = c(\mathbf{u} \cdot \mathbf{v})$
+
+**Visualization:**
+```
+Dot Product Geometric Meaning:
+u = (3,1), v = (2,2)
+
+u·v = 3×2 + 1×2 = 8
+|u| = √10, |v| = 2√2
+cos θ = 8/(√10 × 2√2) = 8/(2√20) = 2/√5
+
+    ↑ v
+    |\
+    | \
+    |  \θ
+    |   \
+----+----→ u
+    
+θ ≈ 26.57° (acute angle → positive dot product)
+```
 
 **Cross Product (3D only):**
-**u** × **v** = [u₂v₃ - u₃v₂, u₃v₁ - u₁v₃, u₁v₂ - u₂v₁]
-
-```python
-def cross_product(u, v):
-    return [
-        u[1] * v[2] - u[2] * v[1],
-        u[2] * v[0] - u[0] * v[2],
-        u[0] * v[1] - u[1] * v[0]
-    ]
-
-# Using NumPy
-u = np.array([1, 2, 3])
-v = np.array([4, 5, 6])
-result = np.cross(u, v)  # [-3, 6, -3]
-```
+$$\mathbf{u} \times \mathbf{v} = \begin{pmatrix} u_2v_3 - u_3v_2 \\ u_3v_1 - u_1v_3 \\ u_1v_2 - u_2v_1 \end{pmatrix}$$
 
 **Properties:**
-- **Anti-commutative**: **u** × **v** = -(**v** × **u**)
-- **Magnitude**: |**u** × **v**| = |**u**||**v**|sin(θ)
-- **Direction**: Perpendicular to both **u** and **v** (right-hand rule)
+- **Anti-commutative**: $\mathbf{u} \times \mathbf{v} = -(\mathbf{v} \times \mathbf{u})$
+- **Magnitude**: $\|\mathbf{u} \times \mathbf{v}\| = \|\mathbf{u}\|\|\mathbf{v}\|\sin \theta$
+- **Direction**: Perpendicular to both $\mathbf{u}$ and $\mathbf{v}$ (right-hand rule)
+
+**Cross Product Visualization:**
+```
+Right-hand rule:        Area interpretation:
+   z ↑ (u×v)           u×v magnitude = area of parallelogram
+     |                      |\
+     |                      | \
+     +----→ y               |  \v
+    /                       |   \
+   /                        |    \
+  ↙ x                       +-----\
+u points toward x           u
+v points toward y
+u×v points toward z
+```
 
 ### Vector Properties
 
 **Magnitude (Length):**
-|**v**| = √(v₁² + v₂² + ... + vₙ²)
+$$\|\mathbf{v}\| = \sqrt{v_1^2 + v_2^2 + \cdots + v_n^2} = \sqrt{\mathbf{v} \cdot \mathbf{v}}$$
 
-```python
-def magnitude(v):
-    return (sum(x**2 for x in v)) ** 0.5
+**Unit Vector:**
+$$\hat{\mathbf{v}} = \frac{\mathbf{v}}{\|\mathbf{v}\|}$$
+
+**Angle Between Vectors:**
+$$\cos \theta = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\| \|\mathbf{v}\|}$$
+
+**Distance Between Points:**
+$$d(\mathbf{u}, \mathbf{v}) = \|\mathbf{u} - \mathbf{v}\|$$
+
+**Visualization Examples:**
+```
+Vector: v = (3, 4)           Unit vectors:           Angle calculation:
+                            î = (1,0)                u = (1,0), v = (1,1)
+    ↑                       ĵ = (0,1)                
+  4 +----→ v                                         u·v = 1×1 + 0×1 = 1
+    |   /|                  v̂ = v/|v|                |u| = 1, |v| = √2
+  3 +  / |                    = (3,4)/5              cos θ = 1/√2
+  2 + /  |                    = (0.6, 0.8)           θ = 45°
+  1 +/   |
+    +----+----→
+    0  1 2 3 4
+
+|v| = √(3² + 4²) = 5
+```
 
 # Using NumPy
 v = np.array([3, 4])

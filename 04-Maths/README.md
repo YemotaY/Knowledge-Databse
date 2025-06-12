@@ -39,16 +39,23 @@ Vector spaces and matrix operations:
 
 ### 📈 [04-Calculus](04-Calculus/)
 Continuous mathematics and analysis:
-- **[Limits and Derivatives](04-Calculus/Limits-and-Derivatives.md)**: Rate of change, optimization
+- **[Derivatives and Limits](04-Calculus/Derivatives-and-Limits.md)**: Rate of change, optimization, L'Hôpital's rule
 - **[Integration](04-Calculus/Integration.md)**: Area under curves, accumulation
 - **[Multivariable Calculus](04-Calculus/Multivariable-Calculus.md)**: Partial derivatives, gradients
 - **[Optimization](04-Calculus/Optimization.md)**: Finding maxima/minima, gradient descent
 
 ### 📊 [05-Statistics-Probability](05-Statistics-Probability/)
 Uncertainty and data analysis:
-- **[Probability Theory](05-Statistics-Probability/Probability-Theory.md)**: Random variables, distributions
+- **[Probability Theory](05-Statistics-Probability/Probability-Theory.md)**: Random variables, distributions, Bayes' theorem
 - **[Descriptive Statistics](05-Statistics-Probability/Descriptive-Statistics.md)**: Mean, variance, correlation
 - **[Inferential Statistics](05-Statistics-Probability/Inferential-Statistics.md)**: Hypothesis testing, confidence intervals
+
+### 🔢 [06-Numerical-Methods](06-Numerical-Methods/)
+Computational mathematics and algorithms:
+- **[Numerical Analysis](06-Numerical-Methods/Numerical-Analysis.md)**: Root finding, integration, linear systems
+- **[Error Analysis](06-Numerical-Methods/Error-Analysis.md)**: Round-off errors, stability, condition numbers
+- **[Optimization Algorithms](06-Numerical-Methods/Optimization-Algorithms.md)**: Gradient descent, Newton's method
+- **[Monte Carlo Methods](06-Numerical-Methods/Monte-Carlo-Methods.md)**: Random sampling, simulation
 - **[Bayesian Methods](05-Statistics-Probability/Bayesian-Methods.md)**: Bayesian inference, applications
 
 ### 🧮 [06-Numerical-Methods](06-Numerical-Methods/)

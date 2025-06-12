@@ -18,37 +18,78 @@ Probability applications in computer science:
 
 ### Sample Space and Events
 
-**Sample Space (Ω):**
+**Sample Space ($\Omega$):**
 The set of all possible outcomes of an experiment.
 
 **Event:**
-A subset of the sample space.
+A subset of the sample space, $A \subseteq \Omega$.
+
+**Set Operations on Events:**
+- **Union**: $A \cup B$ (A or B occurs)
+- **Intersection**: $A \cap B$ (both A and B occur)  
+- **Complement**: $A^c = \Omega \setminus A$ (A does not occur)
+- **Difference**: $A \setminus B = A \cap B^c$ (A but not B)
 
 **Examples:**
-- **Coin flip**: Ω = {H, T}
-- **Die roll**: Ω = {1, 2, 3, 4, 5, 6}
-- **Network packet**: Ω = {success, failure, timeout}
+- **Coin flip**: $\Omega = \{H, T\}$
+- **Die roll**: $\Omega = \{1, 2, 3, 4, 5, 6\}$
+- **Network packet**: $\Omega = \{\text{success}, \text{failure}, \text{timeout}\}$
 
-```python
-# Example: Modeling network packet transmission
-sample_space = {'success', 'failure', 'timeout'}
-event_error = {'failure', 'timeout'}
-event_success = {'success'}
+**Venn Diagram Visualization:**
+```
+Sample Space Ω           Event Operations:
+┌─────────────────┐     
+│  ┌────────A────┐│      A ∪ B (Union):     A ∩ B (Intersection):
+│  │      ┌──────┼┼──┐   ┌────────────┐     ┌────────────┐
+│  │      │  ////││//│   │████████████│     │      ████  │
+│  │      │ ////B││//│   │██A███B█████│     │  A   ████B │
+│  │      │//////││//│   │████████████│     │      ████  │
+│  │      └──────┼┼──┘   └────────────┘     └────────────┘
+│  └─────────────┘│     
+└─────────────────┘     A^c (Complement):   A \ B (Difference):
+                        ┌────────────┐     ┌────────────┐
+                        │████████████│     │██████      │
+                        │████    ████│     │██A███  B   │
+                        │████ A  ████│     │██████      │
+                        │████████████│     └────────────┘
+                        └────────────┘
 ```
 
 ### Probability Axioms
 
 **Kolmogorov Axioms:**
-1. **Non-negativity**: P(A) ≥ 0 for any event A
-2. **Normalization**: P(Ω) = 1
-3. **Additivity**: P(A ∪ B) = P(A) + P(B) if A ∩ B = ∅
+For a probability measure $P$ on sample space $\Omega$:
+
+1. **Non-negativity**: $P(A) \geq 0$ for any event $A \subseteq \Omega$
+2. **Normalization**: $P(\Omega) = 1$  
+3. **Additivity**: If $A \cap B = \emptyset$, then $P(A \cup B) = P(A) + P(B)$
 
 **Basic Properties:**
-- P(∅) = 0 (empty set has probability 0)
-- P(A^c) = 1 - P(A) (complement rule)
-- P(A ∪ B) = P(A) + P(B) - P(A ∩ B) (inclusion-exclusion)
+- $P(\emptyset) = 0$ (empty set has probability 0)
+- $P(A^c) = 1 - P(A)$ (complement rule)
+- $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ (inclusion-exclusion)
 
-```python
+**Inclusion-Exclusion Principle:**
+$$P(A \cup B \cup C) = P(A) + P(B) + P(C) - P(A \cap B) - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)$$
+
+**Probability Visualization:**
+```
+Die Roll Example: Ω = {1,2,3,4,5,6}
+
+Event A = {1,2,3} (roll ≤ 3)     Event B = {2,4,6} (roll even)
+P(A) = 3/6 = 1/2                 P(B) = 3/6 = 1/2
+A ∩ B = {2}                       P(A ∩ B) = 1/6
+A ∪ B = {1,2,3,4,6}              P(A ∪ B) = 5/6
+
+Verification: P(A ∪ B) = P(A) + P(B) - P(A ∩ B) = 1/2 + 1/2 - 1/6 = 5/6 ✓
+
+Visual representation:
+ ┌─A─┬─A∩B─┬─B─┐
+ │ 1 │  2  │   │ 4
+ │ 3 │     │   │ 6
+ └───┴─────┴───┘
+   5 (neither A nor B)
+```
 def probability_complement(p_a):
     return 1 - p_a
 

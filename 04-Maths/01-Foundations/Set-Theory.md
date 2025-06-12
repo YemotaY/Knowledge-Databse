@@ -76,17 +76,55 @@ print(f"A = C: {sets_equal(A, C)}")  # True
 
 ### Basic Operations
 
-**Union (A ∪ B):**
-Set of elements that are in A or B (or both).
+**Union ($A \cup B$):**
+Set of elements that are in $A$ or $B$ (or both).
+$$A \cup B = \{x : x \in A \lor x \in B\}$$
 
-**Intersection (A ∩ B):**
-Set of elements that are in both A and B.
+**Intersection ($A \cap B$):**
+Set of elements that are in both $A$ and $B$.
+$$A \cap B = \{x : x \in A \land x \in B\}$$
 
-**Difference (A - B or A \ B):**
-Set of elements that are in A but not in B.
+**Difference ($A \setminus B$):**
+Set of elements that are in $A$ but not in $B$.
+$$A \setminus B = \{x : x \in A \land x \notin B\}$$
 
-**Complement (A^c or Ā):**
-Set of elements not in A (relative to a universal set U).
+**Complement ($A^c$ or $\overline{A}$):**
+Set of elements not in $A$ (relative to a universal set $U$).
+$$A^c = U \setminus A = \{x \in U : x \notin A\}$$
+
+**Venn Diagram Visualization:**
+```
+Universal Set U
+┌─────────────────────────────┐
+│  ┌─────────A─────────┐      │
+│  │      ┌─────────B─────┐   │
+│  │      │ ████████    │   │   A ∩ B (intersection)
+│  │      │ ████████    │   │
+│  │      └─────────────────┘   │
+│  └─────────────────────┘      │
+└─────────────────────────────┘
+
+Union A ∪ B:            Difference A \ B:        Complement A^c:
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│████████████████│     │████████         │     │█████████████████│
+│███A████████B███│     │███A████    B    │     │█████    A   ████│
+│████████████████│     │████████         │     │█████████████████│
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+```
+
+**Examples with Numbers:**
+```
+Let A = {1, 2, 3, 4} and B = {3, 4, 5, 6}
+
+A ∪ B = {1, 2, 3, 4, 5, 6}
+A ∩ B = {3, 4}  
+A \ B = {1, 2}
+B \ A = {5, 6}
+
+If U = {1, 2, 3, 4, 5, 6, 7, 8}:
+A^c = {5, 6, 7, 8}
+B^c = {1, 2, 7, 8}
+```
 
 ```python
 class SetOperations:
