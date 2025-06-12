@@ -72,46 +72,46 @@ All major computing eras now documented with comprehensive historical analysis a
 ## 🧮 Mathematics Section
 
 ### Mathematical Foundations
-- **[Number Theory](05-Maths/01-Foundations/Number-Theory.md)** - Prime numbers, modular arithmetic, cryptographic mathematics
-- **[Set Theory](05-Maths/01-Foundations/Set-Theory.md)** - Sets, relations, functions, mathematical foundations
-- **[Logic and Proofs](05-Maths/01-Foundations/Logic-and-Proofs.md)** - Propositional logic, proof techniques
-- **[Mathematical Induction](05-Maths/01-Foundations/Mathematical-Induction.md)** - Proof by induction methods
+- **[Number Theory](04-Maths/01-Foundations/Number-Theory.md)** - Prime numbers, modular arithmetic, cryptographic mathematics
+- **[Set Theory](04-Maths/01-Foundations/Set-Theory.md)** - Sets, relations, functions, mathematical foundations
+- **[Logic and Proofs](04-Maths/01-Foundations/Logic-and-Proofs.md)** - Propositional logic, proof techniques
+- **[Mathematical Induction](04-Maths/01-Foundations/Mathematical-Induction.md)** - Proof by induction methods
 
 ### Discrete Mathematics
-- **[Graph Theory](05-Maths/02-Discrete-Mathematics/Graph-Theory.md)** - Graphs, algorithms, network analysis
-- **[Combinatorics](05-Maths/02-Discrete-Mathematics/Combinatorics.md)** - Counting principles, permutations, combinations
-- **[Boolean Algebra](05-Maths/02-Discrete-Mathematics/Boolean-Algebra.md)** - Boolean functions, logic circuits
-- **[Recursion and Recurrence](05-Maths/02-Discrete-Mathematics/Recursion-and-Recurrence.md)** - Recursive relations, algorithm analysis
+- **[Graph Theory](04-Maths/02-Discrete-Mathematics/Graph-Theory.md)** - Graphs, algorithms, network analysis
+- **[Combinatorics](04-Maths/02-Discrete-Mathematics/Combinatorics.md)** - Counting principles, permutations, combinations
+- **[Boolean Algebra](04-Maths/02-Discrete-Mathematics/Boolean-Algebra.md)** - Boolean functions, logic circuits
+- **[Recursion and Recurrence](04-Maths/02-Discrete-Mathematics/Recursion-and-Recurrence.md)** - Recursive relations, algorithm analysis
 
 ### Linear Algebra
-- **[Vectors and Matrices](05-Maths/03-Linear-Algebra/Vectors-and-Matrices.md)** - Vector operations, matrix computations
-- **[Eigenvalues and Eigenvectors](05-Maths/03-Linear-Algebra/Eigenvalues-and-Eigenvectors.md)** - Spectral analysis, applications
-- **[Linear Transformations](05-Maths/03-Linear-Algebra/Linear-Transformations.md)** - Geometric transformations, computer graphics
-- **[Applications in CS](05-Maths/03-Linear-Algebra/Applications-in-CS.md)** - Machine learning, computer graphics applications
+- **[Vectors and Matrices](04-Maths/03-Linear-Algebra/Vectors-and-Matrices.md)** - Vector operations, matrix computations
+- **[Eigenvalues and Eigenvectors](04-Maths/03-Linear-Algebra/Eigenvalues-and-Eigenvectors.md)** - Spectral analysis, applications
+- **[Linear Transformations](04-Maths/03-Linear-Algebra/Linear-Transformations.md)** - Geometric transformations, computer graphics
+- **[Applications in CS](04-Maths/03-Linear-Algebra/Applications-in-CS.md)** - Machine learning, computer graphics applications
 
 ### Calculus
-- **[Limits and Derivatives](05-Maths/04-Calculus/Limits-and-Derivatives.md)** - Rate of change, optimization foundations
-- **[Integration](05-Maths/04-Calculus/Integration.md)** - Area under curves, accumulation functions
-- **[Multivariable Calculus](05-Maths/04-Calculus/Multivariable-Calculus.md)** - Partial derivatives, gradients
-- **[Optimization](05-Maths/04-Calculus/Optimization.md)** - Finding extrema, gradient descent algorithms
+- **[Limits and Derivatives](04-Maths/04-Calculus/Limits-and-Derivatives.md)** - Rate of change, optimization foundations
+- **[Integration](04-Maths/04-Calculus/Integration.md)** - Area under curves, accumulation functions
+- **[Multivariable Calculus](04-Maths/04-Calculus/Multivariable-Calculus.md)** - Partial derivatives, gradients
+- **[Optimization](04-Maths/04-Calculus/Optimization.md)** - Finding extrema, gradient descent algorithms
 
 ### Statistics and Probability
-- **[Probability Theory](05-Maths/05-Statistics-Probability/Probability-Theory.md)** - Random variables, distributions, Bayes' theorem
-- **[Descriptive Statistics](05-Maths/05-Statistics-Probability/Descriptive-Statistics.md)** - Data summarization, visualization
-- **[Inferential Statistics](05-Maths/05-Statistics-Probability/Inferential-Statistics.md)** - Hypothesis testing, confidence intervals
-- **[Bayesian Methods](05-Maths/05-Statistics-Probability/Bayesian-Methods.md)** - Bayesian inference, probabilistic modeling
+- **[Probability Theory](04-Maths/05-Statistics-Probability/Probability-Theory.md)** - Random variables, distributions, Bayes' theorem
+- **[Descriptive Statistics](04-Maths/05-Statistics-Probability/Descriptive-Statistics.md)** - Data summarization, visualization
+- **[Inferential Statistics](04-Maths/05-Statistics-Probability/Inferential-Statistics.md)** - Hypothesis testing, confidence intervals
+- **[Bayesian Methods](04-Maths/05-Statistics-Probability/Bayesian-Methods.md)** - Bayesian inference, probabilistic modeling
 
 ### Numerical Methods
-- **[Numerical Analysis](05-Maths/06-Numerical-Methods/Numerical-Analysis.md)** - Error analysis, numerical stability
-- **[Root Finding](05-Maths/06-Numerical-Methods/Root-Finding.md)** - Newton's method, numerical equation solving
-- **[Numerical Integration](05-Maths/06-Numerical-Methods/Numerical-Integration.md)** - Quadrature methods, computational integration
-- **[Matrix Computations](05-Maths/06-Numerical-Methods/Matrix-Computations.md)** - LU decomposition, iterative methods
+- **[Numerical Analysis](04-Maths/06-Numerical-Methods/Numerical-Analysis.md)** - Error analysis, numerical stability
+- **[Root Finding](04-Maths/06-Numerical-Methods/Root-Finding.md)** - Newton's method, numerical equation solving
+- **[Numerical Integration](04-Maths/06-Numerical-Methods/Numerical-Integration.md)** - Quadrature methods, computational integration
+- **[Matrix Computations](04-Maths/06-Numerical-Methods/Matrix-Computations.md)** - LU decomposition, iterative methods
 
 ### Applied Mathematics
-- **[Algorithm Analysis](05-Maths/07-Applied-Mathematics/Algorithm-Analysis.md)** - Big-O notation, complexity theory
-- **[Cryptographic Mathematics](05-Maths/07-Applied-Mathematics/Cryptographic-Mathematics.md)** - Number theory for security
-- **[Machine Learning Mathematics](05-Maths/07-Applied-Mathematics/Machine-Learning-Mathematics.md)** - Mathematical foundations of ML
-- **[Computer Graphics Math](05-Maths/07-Applied-Mathematics/Computer-Graphics-Math.md)** - 3D transformations, rendering mathematics
+- **[Algorithm Analysis](04-Maths/07-Applied-Mathematics/Algorithm-Analysis.md)** - Big-O notation, complexity theory
+- **[Cryptographic Mathematics](04-Maths/07-Applied-Mathematics/Cryptographic-Mathematics.md)** - Number theory for security
+- **[Machine Learning Mathematics](04-Maths/07-Applied-Mathematics/Machine-Learning-Mathematics.md)** - Mathematical foundations of ML
+- **[Computer Graphics Math](04-Maths/07-Applied-Mathematics/Computer-Graphics-Math.md)** - 3D transformations, rendering mathematics
 
 ## 🔗 External Resources
 
@@ -137,10 +137,10 @@ All major computing eras now documented with comprehensive historical analysis a
 7. [Modern Languages](02-Software/03-Programming-Languages/Modern-Languages.md) → Contemporary languages
 
 ### 🧮 Mathematical Foundations Path
-1. [Number Theory](05-Maths/01-Foundations/Number-Theory.md) → Cryptographic foundations
-2. [Graph Theory](05-Maths/02-Discrete-Mathematics/Graph-Theory.md) → Algorithm foundations
-3. [Linear Algebra](05-Maths/03-Linear-Algebra/Vectors-and-Matrices.md) → Data science foundations
-4. [Probability Theory](05-Maths/05-Statistics-Probability/Probability-Theory.md) → Machine learning foundations
+1. [Number Theory](04-Maths/01-Foundations/Number-Theory.md) → Cryptographic foundations
+2. [Graph Theory](04-Maths/02-Discrete-Mathematics/Graph-Theory.md) → Algorithm foundations
+3. [Linear Algebra](04-Maths/03-Linear-Algebra/Vectors-and-Matrices.md) → Data science foundations
+4. [Probability Theory](04-Maths/05-Statistics-Probability/Probability-Theory.md) → Machine learning foundations
 
 ### 📖 Computing History Path
 1. [Early Computing](03-Historical/01-Early-Computing/Early-Computing-Overview.md) → Foundation era
@@ -155,7 +155,7 @@ All major computing eras now documented with comprehensive historical analysis a
 - **[Hardware Section](01-Hardware/)** - Complete hardware knowledge from components to systems
 - **[Software Section](02-Software/)** - Software development from assembly to modern frameworks  
 - **[Historical Section](03-Historical/)** - Technology evolution through different eras
-- **[Mathematics Section](05-Maths/)** - Mathematical foundations for computer science
+- **[Mathematics Section](04-Maths/)** - Mathematical foundations for computer science
 - **[Linktree Section](04-Linktree/)** - External resources and references
 
 ## Content Statistics

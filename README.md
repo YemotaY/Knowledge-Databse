@@ -5,6 +5,10 @@ This covers both hardware and software, but my focus (and also passion) is more 
 
 ## Project Structure
 
+### 🔗 00-Linktree
+[Curated links](04-Linktree/) and external resources organized by topic and relevance.
+- **[General Links](04-Linktree/General-Links.md)**: Essential computing resources and references
+
 ### 📁 01-Hardware
 Complete hardware knowledge from basic components to modern systems:
 - **[Basic Components](01-Hardware/01-Basic-Components/)**: [Transistors](01-Hardware/01-Basic-Components/Transistors.md), [Capacitors](01-Hardware/01-Basic-Components/Capacitors.md), [Resistors](01-Hardware/01-Basic-Components/Resistors.md), [Diodes](01-Hardware/01-Basic-Components/Diodes.md)
@@ -33,19 +37,16 @@ Technology evolution through different eras:
 - **[Cloud Era](03-Historical/05-Cloud-Era/)** (2010s-2020s): [Cloud computing and services](03-Historical/05-Cloud-Era/Cloud-Computing-Revolution.md)
 - **[AI Era](03-Historical/06-AI-Era/)** (2020s-Present): [Machine learning and modern AI](03-Historical/06-AI-Era/AI-Revolution.md)
 
-### 🔗 04-Linktree
-[Curated links](04-Linktree/) and external resources organized by topic and relevance.
-- **[General Links](04-Linktree/General-Links.md)**: Essential computing resources and references
 
-### 🧮 [05-Maths](05-Maths/)
+### 🧮 [04-Maths](04-Maths/)
 Mathematical foundations for computer science and engineering:
-- **[Foundations](05-Maths/01-Foundations/)**: [Number Theory](05-Maths/01-Foundations/Number-Theory.md), set theory, logic, proofs
-- **[Discrete Mathematics](05-Maths/02-Discrete-Mathematics/)**: [Graph Theory](05-Maths/02-Discrete-Mathematics/Graph-Theory.md), combinatorics, Boolean algebra
-- **[Linear Algebra](05-Maths/03-Linear-Algebra/)**: [Vectors and Matrices](05-Maths/03-Linear-Algebra/Vectors-and-Matrices.md), transformations, eigenvalues
-- **[Calculus](05-Maths/04-Calculus/)**: Derivatives, integration, optimization
-- **[Statistics & Probability](05-Maths/05-Statistics-Probability/)**: [Probability Theory](05-Maths/05-Statistics-Probability/Probability-Theory.md), statistical analysis
-- **[Numerical Methods](05-Maths/06-Numerical-Methods/)**: Computational mathematics, numerical analysis
-- **[Applied Mathematics](05-Maths/07-Applied-Mathematics/)**: Algorithm analysis, cryptographic math, ML mathematics
+- **[Foundations](04-Maths/01-Foundations/)**: [Number Theory](04-Maths/01-Foundations/Number-Theory.md), set theory, logic, proofs
+- **[Discrete Mathematics](04-Maths/02-Discrete-Mathematics/)**: [Graph Theory](04-Maths/02-Discrete-Mathematics/Graph-Theory.md), combinatorics, Boolean algebra
+- **[Linear Algebra](04-Maths/03-Linear-Algebra/)**: [Vectors and Matrices](04-Maths/03-Linear-Algebra/Vectors-and-Matrices.md), transformations, eigenvalues
+- **[Calculus](04-Maths/04-Calculus/)**: Derivatives, integration, optimization
+- **[Statistics & Probability](04-Maths/05-Statistics-Probability/)**: [Probability Theory](04-Maths/05-Statistics-Probability/Probability-Theory.md), statistical analysis
+- **[Numerical Methods](04-Maths/06-Numerical-Methods/)**: Computational mathematics, numerical analysis
+- **[Applied Mathematics](04-Maths/07-Applied-Mathematics/)**: Algorithm analysis, cryptographic math, ML mathematics
 
 ## Getting Started
 Each section contains README files explaining the structure and content. Start with the basics in [Hardware/Basic-Components](01-Hardware/01-Basic-Components/) or dive into any area that interests you!
@@ -56,7 +57,7 @@ Each section contains README files explaining the structure and content. Start w
 - 🔧 **Hardware Fundamentals**: [Transistors](01-Hardware/01-Basic-Components/Transistors.md) → [Logic Gates](01-Hardware/02-Logic-Gates/Logic-Gates-Overview.md) → [CPU Architecture](01-Hardware/03-Processors/CPU-Architecture.md)
 - 💾 **Software Stack**: [Assembly](02-Software/01-Assembly-Language/Assembly-Fundamentals.md) → [Operating Systems](02-Software/02-Operating-Systems/OS-Fundamentals.md) → [Python](02-Software/03-Programming-Languages/Python-Ecosystem.md) → [Modern Languages](02-Software/03-Programming-Languages/Modern-Languages.md)
 - 📖 **Computing History**: [Early Computing](03-Historical/01-Early-Computing/Early-Computing-Overview.md) → [PC Revolution](03-Historical/02-Personal-Computer-Era/Personal-Computer-Revolution.md) → [Internet Era](03-Historical/03-Internet-Era/Internet-Revolution.md) → [Mobile Era](03-Historical/04-Mobile-Era/Mobile-Computing-Revolution.md) → [Cloud Era](03-Historical/05-Cloud-Era/Cloud-Computing-Revolution.md) → [AI Era](03-Historical/06-AI-Era/AI-Revolution.md)
-- 🧮 **Mathematical Foundations**: [Number Theory](05-Maths/01-Foundations/Number-Theory.md) → [Graph Theory](05-Maths/02-Discrete-Mathematics/Graph-Theory.md) → [Linear Algebra](05-Maths/03-Linear-Algebra/Vectors-and-Matrices.md) → [Probability](05-Maths/05-Statistics-Probability/Probability-Theory.md)
+- 🧮 **Mathematical Foundations**: [Number Theory](04-Maths/01-Foundations/Number-Theory.md) → [Graph Theory](04-Maths/02-Discrete-Mathematics/Graph-Theory.md) → [Linear Algebra](04-Maths/03-Linear-Algebra/Vectors-and-Matrices.md) → [Probability](04-Maths/05-Statistics-Probability/Probability-Theory.md)
 - 🔗 **External Resources**: [General Links](04-Linktree/General-Links.md)
 
 
