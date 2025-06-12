@@ -56,6 +56,16 @@ This index provides a comprehensive overview of all content in the Knowledge Dat
 ### Modern Software
 - **[Modern Software Section](02-Software/06-Modern-Software/)** - Cloud computing, microservices, containers
 
+### Protocols
+- **[Network Protocols](02-Software/07-Protocols/README.md)** - Comprehensive protocol documentation and communication standards
+- **[TCP/IP Stack](02-Software/07-Protocols/TCP-IP-Stack.md)** - Internet foundation protocols
+- **[HTTP and HTTPS](02-Software/07-Protocols/HTTP-and-HTTPS.md)** - Web communication protocols
+- **[DNS Protocol](02-Software/07-Protocols/DNS-Protocol.md)** - Domain name resolution system
+- **[Email Protocols](02-Software/07-Protocols/Email-Protocols.md)** - SMTP, POP3, IMAP communication
+- **[Security Protocols](02-Software/07-Protocols/Security-Protocols.md)** - TLS, IPSec, SSH, and cryptographic protocols
+- **[Real-Time Protocols](02-Software/07-Protocols/Real-Time-Protocols.md)** - WebRTC, RTP, RTSP for multimedia
+- **[IoT and Messaging](02-Software/07-Protocols/IoT-and-Messaging-Protocols.md)** - MQTT, CoAP, AMQP protocols
+
 ## 📚 Historical Section
 
 ### Computing Evolution

@@ -27,6 +27,7 @@ Software development from assembly to modern frameworks:
 - **[Frameworks/Libraries](02-Software/04-Frameworks-Libraries/)**: Development tools and platforms
 - **[Development Tools](02-Software/05-Development-Tools/)**: IDEs, compilers, and build systems
 - **[Modern Software](02-Software/06-Modern-Software/)**: Cloud, containers, and current technologies
+- **[Protocols](02-Software/07-Protocols/)**: [Network communication protocols](02-Software/07-Protocols/README.md), [TCP/IP](02-Software/07-Protocols/TCP-IP-Stack.md), [HTTP/HTTPS](02-Software/07-Protocols/HTTP-and-HTTPS.md), [Security Protocols](02-Software/07-Protocols/Security-Protocols.md)
 
 ### 📚 03-Historical
 Technology evolution through different eras:
@@ -56,6 +57,7 @@ Each section contains README files explaining the structure and content. Start w
 ## Quick Navigation
 - 🔧 **Hardware Fundamentals**: [Transistors](01-Hardware/01-Basic-Components/Transistors.md) → [Logic Gates](01-Hardware/02-Logic-Gates/Logic-Gates-Overview.md) → [CPU Architecture](01-Hardware/03-Processors/CPU-Architecture.md)
 - 💾 **Software Stack**: [Assembly](02-Software/01-Assembly-Language/Assembly-Fundamentals.md) → [Operating Systems](02-Software/02-Operating-Systems/OS-Fundamentals.md) → [Python](02-Software/03-Programming-Languages/Python-Ecosystem.md) → [Modern Languages](02-Software/03-Programming-Languages/Modern-Languages.md)
+- 🌐 **Network Protocols**: [TCP/IP Stack](02-Software/07-Protocols/TCP-IP-Stack.md) → [HTTP/HTTPS](02-Software/07-Protocols/HTTP-and-HTTPS.md) → [Security Protocols](02-Software/07-Protocols/Security-Protocols.md) → [Modern APIs](02-Software/07-Protocols/WebSocket-and-API-Protocols.md)
 - 📖 **Computing History**: [Early Computing](03-Historical/01-Early-Computing/Early-Computing-Overview.md) → [PC Revolution](03-Historical/02-Personal-Computer-Era/Personal-Computer-Revolution.md) → [Internet Era](03-Historical/03-Internet-Era/Internet-Revolution.md) → [Mobile Era](03-Historical/04-Mobile-Era/Mobile-Computing-Revolution.md) → [Cloud Era](03-Historical/05-Cloud-Era/Cloud-Computing-Revolution.md) → [AI Era](03-Historical/06-AI-Era/AI-Revolution.md)
 - 🧮 **Mathematical Foundations**: [Number Theory](04-Maths/01-Foundations/Number-Theory.md) → [Graph Theory](04-Maths/02-Discrete-Mathematics/Graph-Theory.md) → [Linear Algebra](04-Maths/03-Linear-Algebra/Vectors-and-Matrices.md) → [Probability](04-Maths/05-Statistics-Probability/Probability-Theory.md)
 - 🔗 **External Resources**: [General Links](04-Linktree/General-Links.md)

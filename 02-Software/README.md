@@ -48,3 +48,11 @@ This section covers software development from the lowest level (assembly) to mod
 - DevOps practices
 - Machine learning frameworks
 - Web technologies and standards
+
+### [07-Protocols](07-Protocols/)
+- [Network Protocols](07-Protocols/README.md) - Comprehensive protocol documentation
+- Core protocols: TCP/IP, HTTP/HTTPS, DNS
+- Application protocols: Email, FTP, WebSocket
+- Real-time protocols: WebRTC, RTP, RTSP
+- IoT and messaging: MQTT, CoAP, AMQP
+- Security protocols: TLS, IPSec, SSH, VPN
