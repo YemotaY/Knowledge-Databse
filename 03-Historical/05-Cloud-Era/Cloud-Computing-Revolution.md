@@ -1,5 +1,7 @@
 # Cloud Computing Revolution (2010s-2020s)
 
+**🏠 [Back to Main](../../README.md)** | **🕒 [Historical Section](../README.md)** | **☁️ [Cloud Era](README.md)** | **⬅️ [Mobile Era](../04-Mobile-Era/Mobile-Computing-Revolution.md)** | **➡️ [AI Era](../06-AI-Era/AI-Revolution.md)**
+
 The Cloud Era represents the fundamental shift from traditional on-premises computing to cloud-based services, transforming how software is developed, deployed, and consumed across all industries.
 
 ## Timeline of Cloud Computing

@@ -1,5 +1,7 @@
 # Memory Types
 
+**🏠 [Back to Main](../../README.md)** | **🔧 [Hardware Section](../README.md)** | **💾 [Memory Section](README.md)** | **🖥️ [Processors](../03-Processors/)** | **💿 [Storage](../05-Storage/)**
+
 ## Overview
 Computer memory systems use various technologies to store data, each with different characteristics in terms of speed, capacity, power consumption, and cost. Understanding these trade-offs is crucial for system design.
 

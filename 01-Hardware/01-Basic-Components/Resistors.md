@@ -1,5 +1,7 @@
 # Resistors
 
+**🏠 [Back to Main](../../README.md)** | **🔧 [Hardware Section](../README.md)** | **🔋 [Basic Components](../01-Basic-Components/)** | **⚡ [Transistors](Transistors.md)** | **🔌 [Capacitors](Capacitors.md)** | **🔌 [Diodes](Diodes.md)**
+
 ## Overview
 Resistors are passive electrical components that limit the flow of electric current in a circuit. They are fundamental components in virtually all electronic circuits.
 

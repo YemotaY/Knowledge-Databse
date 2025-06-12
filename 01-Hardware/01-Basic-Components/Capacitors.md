@@ -1,5 +1,7 @@
 # Capacitors
 
+**🏠 [Back to Main](../../README.md)** | **🔧 [Hardware Section](../README.md)** | **🔋 [Basic Components](../01-Basic-Components/)** | **⚡ [Transistors](Transistors.md)** | **🔌 [Diodes](Diodes.md)** | **📍 [Resistors](Resistors.md)**
+
 ## Overview
 Capacitors store electrical energy in an electric field between two conductive plates separated by an insulating material (dielectric).
 

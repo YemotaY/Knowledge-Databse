@@ -1,5 +1,7 @@
 # Mobile Computing Revolution (2000s-2010s)
 
+**🏠 [Back to Main](../../README.md)** | **🕒 [Historical Section](../README.md)** | **📱 [Mobile Era](README.md)** | **⬅️ [Internet Era](../03-Internet-Era/Internet-Revolution.md)** | **➡️ [Cloud Era](../05-Cloud-Era/Cloud-Computing-Revolution.md)**
+
 The Mobile Era marked one of the most significant technological shifts in computing history, transforming personal computers from stationary workstations to pocket-sized devices that became ubiquitous in daily life.
 
 ## Timeline of Mobile Computing

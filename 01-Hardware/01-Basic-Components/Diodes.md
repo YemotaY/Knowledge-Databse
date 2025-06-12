@@ -1,5 +1,7 @@
 # Diodes
 
+**🏠 [Back to Main](../../README.md)** | **🔧 [Hardware Section](../README.md)** | **🔋 [Basic Components](../01-Basic-Components/)** | **⚡ [Transistors](Transistors.md)** | **🔌 [Capacitors](Capacitors.md)** | **📍 [Resistors](Resistors.md)**
+
 ## Overview
 Diodes are semiconductor devices that allow current to flow in only one direction. They are the simplest semiconductor devices and form the basis for more complex components.
 

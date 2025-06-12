@@ -1,5 +1,7 @@
 # JavaScript and Web Development
 
+**🏠 [Back to Main](../../README.md)** | **💻 [Software Section](../README.md)** | **🔤 [Programming Languages](README.md)** | **🐍 [Python](Python-Ecosystem.md)** | **☕ [Java](Java-and-JVM.md)** | **🆕 [Modern Languages](Modern-Languages.md)**
+
 JavaScript has evolved from a simple scripting language for web pages to a versatile programming language powering everything from front-end interfaces to server-side applications and mobile apps.
 
 ## JavaScript Language Evolution

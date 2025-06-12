@@ -1,5 +1,7 @@
 # Web Frameworks
 
+**🏠 [Back to Main](../../README.md)** | **💻 [Software Section](../README.md)** | **🔧 [Frameworks & Libraries](README.md)** | **🌐 [JavaScript](../03-Programming-Languages/JavaScript-and-Web.md)** | **🐍 [Python](../03-Programming-Languages/Python-Ecosystem.md)**
+
 Modern web development relies heavily on frameworks that provide structure, reusable components, and best practices for building scalable web applications.
 
 ## Frontend Frameworks

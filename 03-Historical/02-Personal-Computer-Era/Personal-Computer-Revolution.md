@@ -1,5 +1,7 @@
 # Personal Computer Era (1970s-1990s)
 
+**🏠 [Back to Main](../../README.md)** | **🕒 [Historical Section](../README.md)** | **⬅️ [Early Computing](../01-Early-Computing/Early-Computing-Overview.md)** | **➡️ [Internet Era](../03-Internet-Era/Internet-Revolution.md)**
+
 ## Overview
 The Personal Computer Era transformed computing from expensive, institutional tools to affordable, personal devices that revolutionized how people work, learn, and communicate. This period saw the birth of the modern PC industry and established the foundations of today's computing landscape.
 

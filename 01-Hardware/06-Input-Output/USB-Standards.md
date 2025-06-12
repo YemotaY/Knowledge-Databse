@@ -1,5 +1,7 @@
 # USB Standards
 
+**🏠 [Back to Main](../../README.md)** | **🔧 [Hardware Section](../README.md)** | **🔌 [Input-Output Section](README.md)** | **💿 [Storage](../05-Storage/)** | **🖥️ [Modern Hardware](../07-Modern-Hardware/)**
+
 ## Overview
 Universal Serial Bus (USB) is the dominant interface for connecting peripherals to computers. It has evolved through multiple generations, increasing speed, power delivery, and functionality while maintaining backward compatibility.
 

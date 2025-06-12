@@ -1,5 +1,7 @@
 # Java and JVM Languages
 
+**🏠 [Back to Main](../../README.md)** | **💻 [Software Section](../README.md)** | **🔤 [Programming Languages](README.md)** | **🐍 [Python](Python-Ecosystem.md)** | **🌐 [JavaScript](JavaScript-and-Web.md)** | **🆕 [Modern Languages](Modern-Languages.md)**
+
 Java revolutionized software development with "write once, run anywhere" philosophy and created an ecosystem of languages running on the Java Virtual Machine (JVM).
 
 ## Java Language

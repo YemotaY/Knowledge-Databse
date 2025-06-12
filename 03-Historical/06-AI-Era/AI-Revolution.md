@@ -1,5 +1,7 @@
 # AI Revolution (2020s-Present)
 
+**🏠 [Back to Main](../../README.md)** | **🕒 [Historical Section](../README.md)** | **🤖 [AI Era](README.md)** | **⬅️ [Cloud Era](../05-Cloud-Era/Cloud-Computing-Revolution.md)** | **🔧 [Hardware](../../01-Hardware/)** | **💻 [Software](../../02-Software/)**
+
 The AI Era represents the most transformative period in computing since the invention of the internet, fundamentally changing how software is developed, how humans interact with computers, and what computational tasks are possible.
 
 ## Timeline of AI Evolution

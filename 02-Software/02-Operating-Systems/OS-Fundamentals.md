@@ -1,5 +1,7 @@
 # Operating System Fundamentals
 
+**🏠 [Back to Main](../../README.md)** | **💻 [Software Section](../README.md)** | **🖥️ [Operating Systems](README.md)** | **⚙️ [Assembly Language](../01-Assembly-Language/)** | **🔤 [Programming Languages](../03-Programming-Languages/)**
+
 ## Overview
 An operating system (OS) is the software layer that manages computer hardware resources and provides services for application programs. It acts as an intermediary between users/applications and the computer hardware.
 
