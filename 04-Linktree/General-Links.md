@@ -1,6 +1,6 @@
 # General Computing Links
 
-**🏠 [Main](../README.md)** | **🔗 [Linktree](README.md)** | **🔧 [Hardware](../01-Hardware/)** | **💻 [Software](../02-Software/)** | **📚 [Historical](../03-Historical/)**
+**🏠 [Main](../README.md)** | **🔗 [Linktree](README.md)** | **🔧 [Hardware](../01-Hardware/)** | **💻 [Software](../02-Software/)** | **📚 [Historical](../03-Historical/)** | **🧮 [Mathematics](../05-Maths/)**
 
 ## Table of Contents
 - [Essential Reference Sites](#essential-reference-sites)
